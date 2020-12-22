@@ -1,0 +1,204 @@
+@import "../fonts/fonts.css";
+
+body
+{
+    background: url("../imgs/background.jpg");
+    background-size: auto 100%;
+    font-family: 'gelionmedium';
+}
+h1
+{
+    font-size: 3.2rem;
+}
+p
+{
+    font-size: 18px;
+    font-family: 'gelion_regularregular';
+}
+hr
+{
+    border-width: 2px;
+}
+.mb-6
+{
+    margin-bottom: 4rem;
+}
+.main-btn
+{
+    border-radius: 6px;
+    box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.15);
+    padding: 24px 20px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    transition: 0.15s;
+    background-color: #2DC5FA;
+    border: none;
+}
+.main-btn:hover,
+.main-btn:active,
+.main-btn:focus
+{
+    opacity: .8;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.main-shadow
+{
+    border: 1px solid #eef5fa;
+    box-shadow: 0px 32px 64px rgba(30, 36, 52, 0.1);
+    border-radius: 1rem;
+}
+
+.light-color
+{
+    color: rgba(33, 35, 83, 0.3)
+}
+.light-blue-color
+{
+    color: #2DC5FA;
+}
+.main-color
+{
+    color: #212353;
+}
+.gray-color
+{
+    color: #5D5D62;
+}
+.dark-color
+{
+    color: #00364D;
+}
+.p-color
+{
+    color: #2D354C;
+}
+.p2-color
+{
+    color: #585858;
+}
+.font-weight-600
+{
+    font-weight: 600;
+}
+.rounded-xl
+{
+    border-radius: .8rem;
+}
+
+/*Start Header*/
+.nav-bar
+{
+    position: relative;
+}
+.header .nav-bar .logos::after
+{
+    content: "";
+    width: 0.1rem;
+    height: 60%;
+    background-color: #ddd;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+}
+@media(max-width: 991px) {
+    .nav-bar
+    {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .header .inner-box
+    {
+        padding-top: 12rem;
+    }
+    .small, small
+    {
+        font-size: 100%;
+    }
+}
+@media(max-width: 767px) {
+    .header .main-btn
+    {
+        font-size: 1rem;
+        border-radius: .2rem;
+    }
+}
+@media(max-width: 576px) {
+    h1
+    {
+        font-size: 2rem;
+    }
+    .header .inner-box
+    {
+        padding-top: 10rem;
+    }
+    .header .nav-bar .logos::after
+    {
+        left: 48px;
+    }
+    .header .nav-bar img:nth-of-type(1)
+    {
+        width: 50px;
+    }
+    .header .nav-bar img:nth-of-type(2)
+    {
+        width: 180px;
+    }
+}
+/*End Header*/
+
+
+
+/*Start registration */
+.registration .number
+{
+    font-size: 3rem;
+}
+/*End registration */
+
+/*Start technologies*/
+.technologies .inner-boxes .image
+{
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    transform: translateY(-50%);
+    width: 70px;
+}
+.technologies .inner-boxes .image.img_1
+{
+    background-color: #EBE9FF;
+}
+.technologies .inner-boxes .image.img_2
+{
+    background-color: #D7F5FF;
+}
+.technologies .inner-boxes .image.img_3
+{
+    background-color: #FFF8E5;
+}
+/*End technologies*/
+
+
+/*Start how-it-work*/
+.how-it-work .parts .media .image
+{
+    width: 70px;
+    height: 70px;
+}
+.how-it-work .parts .media .image.left_img
+{
+    background-color: #FFF8E5;
+}
+.how-it-work .parts .media .image.right_img
+{
+    background-color: #EBE9FF;
+}
+/*End how-it-work*/
